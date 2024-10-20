@@ -45,13 +45,13 @@ export default function LoadProject({ onProjectSelected, setLoadingError }) {
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <span>Drag a file here or </span>
+      <span>Arrastra tu archivo aqui o </span>
       <Button className={S['browse-button']} color="primary">
-        Browse
+        Súbelo
       </Button>
-      <span>a file from your computer</span>
-      {isDragAccept && <p>All files will be accepted</p>}
-      {isDragReject && <p>Some files will be rejected</p>}
+      <span>desde tu computadora</span>
+      {isDragAccept && <p>Todos los archivos fueron aceptados</p>}
+      {isDragReject && <p>Algunos archivos han sido rechazados</p>}
     </div>
   )
 }

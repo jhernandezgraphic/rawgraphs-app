@@ -66,7 +66,7 @@ function DataLoader({
   const options = [
     {
       id: 'paste',
-      name: 'Paste your data',
+      name: 'Copia y pega tus datos',
       loader: (
         <Paste
           userInput={userInput}
@@ -75,13 +75,13 @@ function DataLoader({
         />
       ),
       message:
-        'Copy and paste your data from other applications or websites. You can use tabular (TSV, CSV, DSV) or JSON data.',
+        'Copia y pega tus datos, directamente desde tu computadora u otro sitio web. Puedes usar cualquier formato de tabulación (TSV, CSV, DSV) o datos JSON.',
       icon: BsClipboard,
       allowedForReplace: true,
     },
     {
       id: 'upload',
-      name: 'Upload your data',
+      name: 'Sube un archivo',
       loader: (
         <UploadFile
           userInput={userInput}
@@ -91,14 +91,14 @@ function DataLoader({
           setLoadingError={setLoadingError}
         />
       ),
-      message: 'You can load tabular (TSV, CSV, DSV) or JSON data.',
+      message: 'Puedes subir cualquier tipo de archivo tabulado (TSV, CSV, DSV) o datos de JSON.',
       icon: BsUpload,
       allowedForReplace: true,
     },
     {
       id: 'sample',
-      name: 'Try our data samples',
-      message: '',
+      name: 'Datos Ejemplo',
+      message: 'Prueba con alguno de nuestros ejemplos',
       loader: (
         <DataSamples
           onSampleReady={loadSample}
@@ -110,8 +110,8 @@ function DataLoader({
     },
     {
       id: 'sparql',
-      name: 'SPARQL query',
-      message: 'Load data with a SparQL query',
+      name: '(SPARQL) bases de datos',
+      message: 'Trae tus datos directamente de una SparQL query',
       loader: (
         <SparqlFetch
           userInput={userInput}
@@ -128,9 +128,9 @@ function DataLoader({
     },
     {
       id: 'url',
-      name: 'From URL',
+      name: 'Desde una dirección web',
       message:
-        'Enter a web address (URL) pointing to the data (e.g. a public Dropbox file, a public API, ...). Please, be sure the server is CORS-enabled.',
+        'Introduce una dirección url que apunte a tus datos, por ejemplo: Archivos en Dropbox file, o una API pública.',
       loader: (
         <UrlFetch
           userInput={userInput}
@@ -147,8 +147,8 @@ function DataLoader({
     },
     {
       id: 'project',
-      name: 'Open your project',
-      message: 'Load a .rawgraphs project.',
+      name: 'Abre un proyecto anterior',
+      message: 'Sube un proyecto .rawgraphs.',
       loader: (
         <LoadProject
           onProjectSelected={hydrateFromProject}
@@ -364,7 +364,7 @@ function DataLoader({
               }}
             >
               <BsArrowCounterclockwise className="mr-2" />
-              <h4 className="m-0 d-inline-block">{'Change data'}</h4>
+              <h4 className="m-0 d-inline-block">{'Cambiar datos'}</h4>
             </div>
           </Col>
         )}

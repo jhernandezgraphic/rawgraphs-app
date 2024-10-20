@@ -14,8 +14,8 @@ export default function Footer(props) {
         <Row>
           <Col xs={6} sm={{ span: 5, order: 1 }} lg={{ span: 3, order: 1 }}>
             <p className="Xsmall">
-              RAWGraphs is an open source project designed and developed by{' '}
-              <a
+              Ideografiko.app es un demo BETA basado en la librería D3 y Rawgraph{' '}
+              {/* <a
                 href="http://densitydesign.org/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -37,9 +37,9 @@ export default function Footer(props) {
                 rel="noopener noreferrer"
               >
                 Inmagik
-              </a>
+              </a>*/}
               .
-              <br />© 2013-2021{' '}
+              <br />© 2023{' '}
               <a href="https://raw.github.com/rawgraphs/rawgraphs-app/master/LICENSE">
                 (Apache License 2.0)
               </a>
@@ -57,16 +57,16 @@ export default function Footer(props) {
             xl={{ span: 2, offset: 2 }}
           >
             <p>
-              <BsFillEnvelopeFill /> hello at rawgraphs.io
+              <BsFillEnvelopeFill /> Contacto@ideografiko.com
             </p>
             <p>
               <FaTwitter />{' '}
               <a
-                href="https://twitter.com/rawgraphs"
+                href="https://twitter.com/ideografiko"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @rawgraphs
+                @ideografiko
               </a>
             </p>
           </Col>
@@ -77,26 +77,7 @@ export default function Footer(props) {
             lg={{ offset: 0 }}
             xl={{ span: 2, offset: 0 }}
           >
-            <p>
-              <FaGithub />{' '}
-              <a
-                href="https://github.com/rawgraphs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </p>
-            <p>
-              <BsBarChartFill />{' '}
-              <a
-                href="https://old.rawgraphs.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RAWGraphs v.1
-              </a>
-            </p>
+
           </Col>
         </Row>
       </Container>

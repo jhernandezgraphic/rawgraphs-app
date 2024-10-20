@@ -41,13 +41,13 @@ export default function UploadFile({
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <span>Drag a file here or </span>
+      <span>Arrastra un archivo o </span>
       <Button className={S['browse-button']} color="primary">
-        Browse
+        Súbelo
       </Button>
-      <span>a file from your computer</span>
-      {isDragAccept && <p>All files will be accepted</p>}
-      {isDragReject && <p>Some files will be rejected</p>}
+      <span>desde tu computadora</span>
+      {isDragAccept && <p>Los archivos han sido aceptados</p>}
+      {isDragReject && <p>Algunos archivos han sido rechazados</p>}
     </div>
   )
 }

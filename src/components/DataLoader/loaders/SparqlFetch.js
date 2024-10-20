@@ -125,7 +125,7 @@ export default function SparqlFetch({
   return (
     <>
       <div className={classNames(S['base-iri-input-here'])}>
-        <span>Write your SPARQL Endpoint here</span>
+        <span>Escribe la URL dl SPARQL aqui</span>
       </div>
       <input
         className={classNames('w-100', S['url-input'])}
@@ -135,7 +135,7 @@ export default function SparqlFetch({
         }}
       />
       <div className={classNames(S['query-input-here'])}>
-        <span>Write your query here</span>
+        <span>Escribe aqui la consulta</span>
       </div>
       <div ref={editorDomRef} />
       <div className="text-right">
@@ -144,7 +144,7 @@ export default function SparqlFetch({
           disabled={!parsedQuery || !url}
           onClick={onSubmit}
         >
-          Run query
+          Iniciar la consulta
         </button>
       </div>
     </>

@@ -31,14 +31,14 @@ function LoadFromFile({ loading, load }) {
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <span>Drag a file here or </span>
+      <span>Arrastra un archivo o</span>
       <Button className={styles['browse-button']} color="primary">
-        Browse
+        Súbelo
       </Button>
-      <span>a file from your computer</span>
+      <span>desde tu computadora</span>
       <div className={styles.dropin}>
-        {isDragAccept && <p>All files will be accepted</p>}
-        {isDragReject && <p>Some files will be rejected</p>}
+        {isDragAccept && <p>Los archivos han sido aceptados</p>}
+        {isDragReject && <p>Algunos archivos han sido rechazados</p>}
       </div>
     </div>
   )

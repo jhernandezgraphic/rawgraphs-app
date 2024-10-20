@@ -32,24 +32,24 @@ export default function ParsingOptions(props) {
   return (
     <Row>
       <Col className={styles.parsingOptions}>
-        <b>DATA PARSING OPTIONS</b>
+        <b>OPCIONES DE ANÁLISIS DE DATOS</b>
 
         {props.userDataType === 'csv' && (
           <SeparatorSelector
-            title="Column separator"
+            title="Separador de columnas"
             value={props.separator}
             onChange={(nextSeparator) => props.setSeparator(nextSeparator)}
           />
         )}
         <ThousandsSeparatorSelector
-          title="Thousands separator"
+          title="Símbolo separador de miles"
           value={props.thousandsSeparator}
           onChange={(nextSeparator) =>
             props.setThousandsSeparator(nextSeparator)
           }
         />
         <DecimalsSeparatorSelector
-          title="Decimals separator"
+          title="Separador de decimales"
           value={props.decimalsSeparator}
           onChange={(nextSeparator) =>
             props.setDecimalsSeparator(nextSeparator)
@@ -57,7 +57,7 @@ export default function ParsingOptions(props) {
         />
 
         <DateLocaleSelector
-          title="Date Locale"
+          title="Prefijo Localización"
           value={props.locale}
           onChange={(nextLocale) => props.setLocale(nextLocale)}
         />
@@ -65,7 +65,7 @@ export default function ParsingOptions(props) {
         {get(dataRefreshWorkers, get(props.dataSource, 'type', ''), null) && (
           <Button
             color="primary"
-            className={styles['refresh-button']}
+            className={styles['Refrescar']}
             onClick={() => refreshData()}
           >
             <BsArrowRepeat className="mr-2" />
@@ -75,10 +75,10 @@ export default function ParsingOptions(props) {
 
         <div className="divider mb-3 mt-0" />
 
-        <b>DATA TRANSFORMATION</b>
+        <b>TRANSFORMACIÓN DE LOS DATOS</b>
 
         <StackSelector
-          title="Stack on"
+          title="Organizar por"
           value={props.stackDimension}
           list={props.dimensions}
           onChange={(nextStackDimension) =>
